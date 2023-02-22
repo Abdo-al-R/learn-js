@@ -1,22 +1,20 @@
-/*
-  String Challenge
-  All Solutions Must Be In One Chain
-  You Can Use Concatenate
-*/
+let userName = "Elzero";
 
-let a = "hh Elzero Web School hh";
 
-// Include This Method In Your Solution [slice, charAt]
-console.log(a.slice(2,6).charAt(0).toUpperCase() + a.slice(3,6)); // Zero
+console.log( userName[0].toLowerCase()); // e
+console.log(userName.charAt(0).toLowerCase()); // e
+console.log(userName.slice(0,1).toLowerCase()); // e
+console.log(userName.slice(0,1).toLowerCase()); // e
+console.log(userName.substring(0,1).toLowerCase()); // e
+console.log(userName.substr(0,1).toLowerCase().repeat(3)); // eee
 
-// 8 H
-console.log(a.charAt(a.length - 4).toUpperCase().repeat(8)); // HHHHHHHH
 
-// Return Array
-console.log(a.split(" " , 1)); // ["Elzero"]
 
-// Use Only "substr" Method + Template Literals In Your Solution
-console.log(a.substr( 0 , 6 ) + a.substr( -7 ) ); // Elzero School
+let word = "Elzero";
+let letterZ = "z";
+let letterE = "e";
+let letterO = "O";
 
-// Solution Must Be Dynamic Because String May Changes
-console.log( a.charAt(0).toLowerCase() + a.slice( 1 , length-1).toUpperCase() + a.charAt(a.length-1).toLowerCase()); // eLZERO WEB SCHOOl
+console.log(word.includes(letterZ)); // True
+console.log(word.startsWith(letterE.toUpperCase())); // True
+console.log(word.endsWith(letterO.toLowerCase())); // True
