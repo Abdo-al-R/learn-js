@@ -1,20 +1,28 @@
-let userName = "Elzero";
+let day = "   tuesday  ";
+// You Need To Remove Spaces And Make First Letter Capital => Friday
 
+switch (day.trim().charAt(0).toUpperCase() + day.trim().slice(1, day.length)) {
+  case "Friday":
+  case "Saturday":
+  case "Sunday":
+    console.log("No Appointments Available");
+    break;
 
-console.log( userName[0].toLowerCase()); // e
-console.log(userName.charAt(0).toLowerCase()); // e
-console.log(userName.slice(0,1).toLowerCase()); // e
-console.log(userName.slice(0,1).toLowerCase()); // e
-console.log(userName.substring(0,1).toLowerCase()); // e
-console.log(userName.substr(0,1).toLowerCase().repeat(3)); // eee
+  case "Monday":
+  case "Thursday":
+    console.log("From 10:00 AM To 5:00 PM");
 
+    break;
+  case "Tuesday":
+    console.log("From 10:00 AM To 6:00 PM");
+    break;
+  case "Wednesday":
+    console.log("From 10:00 AM To 7:00 PM");
+    break;
+  default:
+    console.log("Its Not A Valid Day");
 
+    break;
+}
 
-let word = "Elzero";
-let letterZ = "z";
-let letterE = "e";
-let letterO = "O";
-
-console.log(word.includes(letterZ)); // True
-console.log(word.startsWith(letterE.toUpperCase())); // True
-console.log(word.endsWith(letterO.toLowerCase())); // True
+// don't forget to push it to github
