@@ -1,32 +1,51 @@
-
-
 // don't forget to push it to github
 
+// let start = 10;
+// let end = 100;
+// let exclude = 40;
 
-/*
-  Array Challenge
-*/
+// for( i = 10; i<=end; i= i+start ){
+//     if(i===exclude){
+//         continue;
+//     }
+//     console.log(i)
+// }
+// // Output
+// // 10
+// // 20
+// // 30
+// // 50
+// // 60
+// // 70
+// // 80
+// // 90
+// // 100
 
-let zero = 0;
+// let index = 10;
+// let jump = 2;
+// let end = 0;
 
-let counter = 3;
+// for (i=index; i<=index ; i=i-jump) {
+//   console.log(i)
+//   if(i===jump+jump){
+//     break;
+//   }
+// }
 
-let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+// Output
+// 10
+// 8
+// 6
+// 4
+let start = 0;
+let mix = [1, 2, 3, "A", "B", "C", 4];
 
-// Write Code Here
-my.pop();
-my.pop();
-my.reverse();
-console.log(my); // ["Osama", "Elham", "Mazero", "Ahmed"];
-
-my.shift();
-my.pop();
-console.log(my.slice(zero)); // ["Elham", "Mazero"]
-
-my.push("Elzero")
-my.reverse()
-my.pop();
-my.pop();
-console.log(my); // "Elzero"
-
-console.log(my.join().slice(++counter , counter+counter)); // "rO"
+for (let i = 0; i < mix.length; i++) {
+  if (isNaN(mix[i])) {
+    continue;
+  }
+  if (mix[i] === 1) {
+    continue;
+  }
+  console.log(mix[i]);
+}
